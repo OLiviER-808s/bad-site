@@ -6,7 +6,7 @@ function App() {
   const [results, setResults] = useState([])
 
   const getResults = async (term) => {
-    const response = await fetch(`api/products/search?term=${term}`)
+    const response = await fetch(`/api/products/search?term=${term}`)
     const data = await response.json()
     
     setResults(data)

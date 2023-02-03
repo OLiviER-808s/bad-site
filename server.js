@@ -13,7 +13,7 @@ app.get('/api/products/search', (req, res) => {
 
     db.all(sql, [], (err, rows) => {
       if (err) return console.log(err)
-    
+      
       res.json(rows)
     })
   }
